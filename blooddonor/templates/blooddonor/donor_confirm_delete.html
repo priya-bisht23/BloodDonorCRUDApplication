@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm Delete</title>
+    <style>
+       
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #d9534f;
+}
+
+p {
+    color: #333;
+}
+
+form {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #d9534f;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #c9302c;
+}
+
+a {
+    color: #5bc0de;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #2aabd2;
+    text-decoration: underline;
+}
+
+.cancel-link {
+    display: block;
+    margin-top: 10px;
+}
+
+    </style>
+</head>
+<body>
+    <h2>Confirm Delete???</h2>
+    <p>Are you sure you want to delete {{ donor.name }}?</p>
+    <form method="post" action="{% url 'delete_donor' donor.id %}">
+        {% csrf_token %}
+        <button type="submit">Yes, delete</button>
+    </form>
+    <a href="{% url 'donor_list' %}">Cancel</a>
+</body>
+</html>

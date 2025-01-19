@@ -1,0 +1,15 @@
+---
+version: 0.2
+phases:
+  install:
+    commands:
+      - pip install -r requirements.txt >/dev/null
+  pre_build:
+    commands:
+      - echo "Running Pylint static code analysis"
+  build:
+    commands:
+      - echo "Collecting static files"
+artifacts:
+  files:
+    - "**/*"

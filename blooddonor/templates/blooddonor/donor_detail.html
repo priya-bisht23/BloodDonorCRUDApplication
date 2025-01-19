@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donor Details</title>
+    <style>
+    
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: darkblue;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #dee2e6;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #dc3545;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #bd2130;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.donor-details {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.add-new-donor {
+    display: block;
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.add-new-donor:hover {
+    background-color: #218838;
+}
+
+    </style>
+</head>
+<body>
+    <h2>You can view the details of {{ donor.name }} </h2>
+    <table border="1">
+        <caption>Blood Donor Data</caption>
+        <tr>
+            <td>Blood Type:</td>
+            <td>{{ donor.blood_type }}</td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td>{{ donor.email }}</td>
+        </tr>
+        <tr>
+            <td>Phone Number:</td>
+            <td>{{ donor.phone_number }}</td>
+        </tr>
+        <tr>
+            <td>Current Address:</td>
+            <td>{{ donor.address }}</td>
+        </tr>
+    </table>
+</body>
+</html>
