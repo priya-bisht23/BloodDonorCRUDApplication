@@ -1,6 +1,5 @@
 # INTRODUCTION
 
-
 Blood Donor CRUD Application is a web-based system built using Django that allows users to perform CRUD (Create, Read, Update, Delete) operations on blood donor records. 
 It helps in managing donor information efficiently and is designed for organizations or hospitals that require a centralized system to track blood donors.
 
@@ -53,3 +52,29 @@ source venv/bin/activate  # On Windows use: venv\Scripts\activate
 3. Update the donor information
 
 4. Delete donor records
+
+# Steps and Configuration for Deployment
+
+# Deploying on AWS Elastic Beanstalk
+
+Install the AWS Elastic Beanstalk CLI
+
+Initialize Elastic Beanstalk
+
+Create an environment and deploy
+
+# Contributing
+
+Fork the repository.
+
+Create a feature branch (git checkout -b feature-name).
+
+Commit your changes (git commit -m 'Add feature').
+
+Push to the branch (git push origin feature-name).
+
+Open a Pull Request.
+
+# License
+
+This project is licensed under the MIT License.
