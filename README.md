@@ -15,7 +15,6 @@ HTML, CSS, JavaScript
 
 AWS Elastic Beanstalk (Optional for Deployment)
 
-Git
 
 # Installation
 
