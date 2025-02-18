@@ -35,7 +35,7 @@ Virtual environment (optional but recommended)
 
 2. Create and Activate Virtual Environment:  python -m venv venv
 
-source venv/bin/activate  # On Windows use: venv\Scripts\activate
+   source venv/bin/activate  # On Windows use: venv\Scripts\activate
 
 3. Install Dependencies: pip install -r requirements.txt
 
@@ -53,9 +53,7 @@ source venv/bin/activate  # On Windows use: venv\Scripts\activate
 
 4. Delete donor records
 
-# Steps and Configuration for Deployment
-
-# Deploying on AWS Elastic Beanstalk
+# Steps and Configuration for Deployment on AWS Elastic Beanstalk
 
 Install the AWS Elastic Beanstalk CLI
 
